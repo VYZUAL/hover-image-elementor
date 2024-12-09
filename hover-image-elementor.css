@@ -1,0 +1,20 @@
+/* Standaardafbeelding en hoverafbeelding */
+.woocommerce ul.products li.product img {
+    transition: opacity 0.3s ease-in-out;
+    position: relative;
+}
+
+.woocommerce ul.products li.product .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.woocommerce ul.products li.product:hover .hover-image {
+    opacity: 1;
+}
